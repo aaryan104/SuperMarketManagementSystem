@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="SuperMarketManagementSystem.SMMS.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>SMMS</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="../../Asset/Lib/Bootstrap/css/bootstrap.min.css" />
+    <style>
+        nav {
+            background-color: #fe2626;
+        }
+        .nav1 {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right: 10px;
+            padding-bottom: 9px;
+            margin-left: 20px;
+            transition: all 0.3s ease;
+        }
+        .nav1:hover {
+            color: white;
+            font-size: 27px;
+        }
+        .navi {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-family: Arial;
+            padding-bottom: 8px;
+           /* transition: all 0.3s ease;*/
+        }
+        .navi:hover {
+            color: white;
+            /*font-size: 20px;*/
+        }
+        /*nav {
+            background-color: #fe2626;
+        }
+        .nav1 {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right: 10px;
+            padding-bottom: 9px;
+            margin-left: 20px;
+        }
+    
+        .navi {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-family: Arial;
+            padding-bottom: 8px;
+            font-size: 18px;
+        }
+        .navi:hover {
+            color: #ffe6e6; 
+            font-size: 20px; 
+            background-color: #d92020;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }*/
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="nav1" href="../Home.aspx">SMMS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>   
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="navi" href="Dashboard.aspx">Dashboard</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="navi" href="Products.aspx">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navi" href="Categories.aspx">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navi" href="Sellers.aspx">Seller</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navi" href="AllBills.aspx">Bill</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navi" href="ProductSells.aspx">Sell-Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navi" href="../Home.aspx">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

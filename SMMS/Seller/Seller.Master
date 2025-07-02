@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Seller.master.cs" Inherits="SuperMarketManagementSystem.SMMS.Customer.Seller" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Seller / Master</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="../../Asset/Lib/Bootstrap/css/bootstrap.min.css" />
+    <style>
+        nav {
+            background-color: #fe2626;
+        }
+        .nav1 {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right: 10px;
+            padding-bottom: 9px;
+            margin-left: 20px;
+            transition: all 0.3s ease;
+        }
+        .nav1:hover {
+            color: white;
+            font-size: 27px;
+        }
+        .navi {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-family: Arial;
+            padding-bottom: 8px;
+           /* transition: all 0.3s ease;*/
+        }
+        .navi:hover {
+            color: white;
+            /*font-size: 20px;*/
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="nav1" href="../Home.aspx">SMMS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>   
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="navi" href="Billing.aspx">Billing</a>
+            </li>
+            <li class="nav-item active">
+                <a class="navi" href="BillHistory.aspx">History</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="navi" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+                <a class="navi" href="#">Seller</a>
+            </li>-->
+            <li class="nav-item">
+                <a class="navi" href="../Home.aspx">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
