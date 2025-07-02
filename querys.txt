@@ -1,0 +1,30 @@
+
+
+SELECT * FROM BillTbl WHERE Seller=(SELECT SelId FROM SellerTbl WHERE SelEmail='aryan@gmail.com')
+
+
+SELECT sum(Amount) FROM Billtbl
+
+SELECT count(*) FROM Billtbl
+
+
+SELECT * FROM BillTbl WHERE BillId=2105
+
+
+SELECT sum(Amount) FROM Billtbl WHERE SelName='Gopal Dave'
+
+
+-- for a-z
+SELECT * FROM ProductTbl ORDER BY PrName ASC;
+
+-- for z-a
+SELECT * FROM ProductTbl ORDER BY PrName DESC;
+
+
+SELECT COUNT(DISTINCT Product) AS TotalUniqueItems FROM ProductSells;
+
+SELECT SUM(Quantity) AS TotalQuantity FROM ProductSells;
+
+
+
+SELECT * FROM ProductSells WHERE Sel_name LIKE 'g%' AND Product LIKE 'c%' AND Bill_no=2158;
